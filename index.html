@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description" class="description">Please fill out this form with the required information</p>
+        </header>
+    
+        <form class="glass"  method="post" action="" id="survey-form">
+            <section class="form-group">
+                <label for="complete-name">Enter your complete name
+                </label>
+                <input class="form-input" name="complete-name" type="text" placeholder="Enter your complete name" required>
+            </section>
+            <section class="form-group">
+                <label for="email">Enter your email
+                </label>        
+                <input class="form-input" id="email" name="email" type="email" placeholder="Enter your email" required>
+            </section>
+            <hr>
+            <section class="form-group">
+                <label for="number-label">Age(optional)
+                </label>
+                <input class="form-input" type="number" name="age" id="number" min="15" max="100" placeholder="Age">
+            </section>
+            <hr>
+            <section class="form-group">
+                <p>What would be your ideal scenario to celebrate Halloween?</p>
+                <select class="form-input" name="app" id="dropdown" required>
+                    <option disabled selected>Select a current theme</option>
+                    <option value="party">A costume party</option>
+                    <option value="exploring">Exploring a haunted house</option>
+                    <option value="park">At a Halloween theme park</option>
+                    <option value="movies">At home watching horror movies</option>
+                </select>
+            </section>
+            <hr>
+            <section class="form-group">
+                <p>If you could visit a haunted place, which one would you choose?</p>
+                <label for="choose">
+                    <input class="input-chekcbox id="abandoned-castle" type="checkbox" name="user-siymbol" checked>
+                    An abandoned castle
+                </label>
+                <label for="choose">
+                    <input class="input-chekcbox" id="dark-forest" type="checkbox" name="user-siymbol">A dark forest
+                </label>
+                <label for="choose">
+                    <input class="input-chekcbox" id="abandoned-hospital" type="checkbox" name="user-siymbol">An abandoned hospital
+                </label>
+
+                <label for="choose">
+                    <input class="input-chekcbox" id="old-mansion" type="checkbox" name="user-siymbol">An old mansion
+                </label>
+            </section>
+            <hr>
+            <section class="form-group">
+                <p>What is your favorite Halloween symbol?</p>
+            
+                <label for="bats-symbol">
+                    <input class="input-radio" id="bats-symbol" type="radio" name="user-siymbol" checked>Bats
+                </label>
+
+                <label for="skulls-symbol">
+                    <input class="input-radio" id="skulls-symbol" type="radio" name="user-siymbol" checked>Skulls
+                </label>
+            </section>
+            <hr>
+            <section class="form-group">
+                <p>Tell us about your most terrifying experience</p>
+                <textarea class="input-textarea" name="experience" id="experience" rows="4" cols="35" placeholder="My scariest experience has been in a forest..."></textarea>
+                </textarea>
+            </section>
+            <section class="form-group">
+                <input type="submit" value="Submit">
+            </section>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+@font-face {
+    font-family:"Walking" ;
+    src: url("Dead Font Walking.otf");
+}
+:root{
+    --bg-color:rgb(65, 65, 65);
+    --text-color:#F5F5F5;
+    --orange-color:#FF6B00;
+    --border:#FF6B00;
+}
+*,::before,::after{
+    box-sizing: border-box;
+    
+}
+body {
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   font-size: 1rem;
+   margin: 0;
+   line-height: 1.5;
+ }
+
+ body::before{
+   content: "";
+   position: fixed;
+   width: 100%;
+   height: 100%;
+
+ }
+h1{
+    font-family:"Walking", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .3rem;
+    font-size: 2.25rem;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.container{
+    max-width: 550px;
+    margin: auto;
+}
+.glass{
+    background-image: linear-gradient(115deg,rgba(26,26,26,0.8),rgba(245, 96, 50,0.5)95%);
+    backdrop-filter: blur(10px);
+   
+}
+
+ .header{
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+ }
+ .description{
+    font-style: italic;
+ }
+
+ form{
+    background-color: #1a1a1a;
+    padding: 2rem;   
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    
+ }
+
+ .form-group{
+    margin:0 auto 1.5rem auto ;
+    padding: .25rem;
+ }
+
+ label{
+    display: flex;
+    align-items: center;
+    font-size:1.15rem;
+    margin-bottom: .5rem;
+ }
+input,select,textarea{
+    margin: 0;
+}
+textarea{
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+ .form-input{
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    padding: .4px .8rem;
+    color:var(--bg-color);
+    border-radius: .5rem;
+    background-color: var(--text-color);
+ }
+
+ .input-chekcbox,
+ .input-radio{
+    display: inline-block;
+    margin-right: .5rem ;
+    min-height: 1rem;
+    min-width: 1rem;
+ }
+
+ .input-textarea{
+    width: 100%;
+    padding: .5rem;
+    min-height: 100px;
+ }
+ input[type="submit"]{
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--orange-color);
+    color: var(--text-color);
+    text-shadow: rgba(0,0,0,37);
+    border-color: var(--border);
+    border-radius: 3.5rem;
+    cursor: pointer;
+ }
+ input[type="submit"]:hover{
+    background-color: #f77f29;
+ }
+
+ hr{
+    border-bottom: .1px solid #f5f5f50c;
+    
+ }
+ @media (min-width: 768px){
+    .container{
+        max-width: 740px;
+    }
+ }
+ @media (min-width: 992px){
+    .container{
+        width: 100%;
+    }
+    form{
+    padding: 1.5rem 0.5rem;
+    }
+ }
